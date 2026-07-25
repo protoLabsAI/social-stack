@@ -20,7 +20,7 @@ verified_against: 0.114.0
 plugins:
   - { id: artifact, builtin: true }                                                    # quote cards, previews, visual assets
   - { id: notes, builtin: true }                                                       # idea capture between planning sessions
-  - { id: social, url: https://github.com/protoLabsAI/social-plugin, ref: v0.2.0 }
+  - { id: social, url: https://github.com/protoLabsAI/social-plugin, ref: v0.2.1 }
 
 # Suggested turn-on list — applied automatically on the archetype/setup paths,
 # a suggestion on raw `plugin install` (ADR 0040).

@@ -15,12 +15,12 @@ description: >-
   them, and a copy-ready export pack. Draft-only — it holds no platform credentials and posts
   nowhere; a person publishes.
 
-verified_against: 0.114.0
+verified_against: 0.115.0
 
 plugins:
   - { id: artifact, builtin: true }                                                    # quote cards, previews, visual assets
   - { id: notes, builtin: true }                                                       # idea capture between planning sessions
-  - { id: social, url: https://github.com/protoLabsAI/social-plugin, ref: v0.3.3 }
+  - { id: social, url: https://github.com/protoLabsAI/social-plugin, ref: v0.3.4 }
 
 # Suggested turn-on list — applied automatically on the archetype/setup paths,
 # a suggestion on raw `plugin install` (ADR 0040).

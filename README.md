@@ -12,7 +12,7 @@ pack you publish in ten minutes.
 
 | Member | Ships | Why it's here |
 |---|---|---|
-| `social` | [social-plugin](https://github.com/protoLabsAI/social-plugin) | The brand kit, the platform specs, the content queue, the linter, the export pack, a writer + editor crew, and five skills |
+| `social` | [social-plugin](https://github.com/protoLabsAI/social-plugin) | The brand kit, the platform specs, the content queue, the linter, the export pack, a writer + editor + researcher crew, and five skills |
 | `artifact` | builtin | Quote cards, previews, and the visual assets a post needs |
 | `notes` | builtin | Idea capture between planning sessions |
 

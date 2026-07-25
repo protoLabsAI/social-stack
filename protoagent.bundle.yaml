@@ -1,0 +1,47 @@
+# social-stack — the bundle behind protoAgent's Social Marketing archetype.
+# Composes the organic-social agent: brand voice + platform craft + a content
+# queue (social), the surfaces that produce and hold the assets (artifact, notes).
+#
+# Pin rules per ADR 0049: member entries stay one-line, refs are release TAGS
+# (plugins.lock records the resolved SHA), verified_against is the core version
+# this pin set was last verified on.
+
+id: social-stack
+name: Social Marketing Stack
+description: >-
+  An organic social marketing agent, prepackaged: a brand kit that makes every draft sound like
+  the brand, the real limits and norms of nine platforms, a content queue you plan and draft
+  into, a linter that catches over-length posts and machine-written cadence before a human sees
+  them, and a copy-ready export pack. Draft-only — it holds no platform credentials and posts
+  nowhere; a person publishes.
+
+verified_against: 0.114.0
+
+plugins:
+  - { id: artifact, builtin: true }                                                    # quote cards, previews, visual assets
+  - { id: notes, builtin: true }                                                       # idea capture between planning sessions
+  - { id: social, url: https://github.com/protoLabsAI/social-plugin, ref: v0.1.0 }
+
+# Suggested turn-on list — applied automatically on the archetype/setup paths,
+# a suggestion on raw `plugin install` (ADR 0040).
+enabled: [artifact, notes, social]
+
+# No config defaults on purpose: the brand kit is built in conversation (the
+# `brand-kit-setup` skill), the data dir defaults to the instance-scoped path, and
+# `active_platforms` ships with the four most brands actually use — all three are
+# better answered by the operator than guessed here.
+
+# Deliberately NOT included:
+#   * Any publishing connector. See the plugin README — publishing is the expensive,
+#     brittle half, and a human between an agent and a public feed is worth keeping.
+#   * cowork-stack. Add it alongside this one if you want LinkedIn PDF carousels and
+#     decks; it pulls in a Python runtime, which an organic-social agent shouldn't
+#     need by default.
+
+# Presents this bundle as a starter agent type in the new-agent picker (ADR 0042).
+# The protoAgent catalog also carries a `social-marketing` row pointing here — the
+# picker dedupes by bundle URL.
+archetype:
+  label: Social Marketing
+  icon: Megaphone
+  blurb: A social marketing manager — brand voice, a balanced calendar, native drafts per platform, and a copy-ready pack. Never posts on its own.
